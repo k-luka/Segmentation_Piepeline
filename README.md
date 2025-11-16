@@ -2,6 +2,12 @@
 
 Learning project that trains a UNet to segment pet masks from the Oxford-IIIT Pet dataset. Hydra drives configuration, torchvision handles data loading/augmentations, and training/evaluation happens through the `Trainer` class in `src/train_or_eval.py`.
 
+## Example Output
+
+| Input | Predicted Mask |
+| :---: | :------------: |
+| ![](docs/image_1.png) | ![](docs/mask_1.png) |
+
 ## Project Layout
 
 - `src/main.py` – Hydra entrypoint that builds the model, dataloaders, optimizer/scheduler combo, and launches training/evaluation/inference.
