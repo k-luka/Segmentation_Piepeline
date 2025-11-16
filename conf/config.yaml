@@ -1,0 +1,28 @@
+defaults:
+  - _self_
+
+work_dir: ${hydra:runtime.cwd}
+
+
+model:
+  class_path: model.UNet.Unet
+  in_channels: 3
+  num_classes: 3
+  checkpoint: checkpoints/unet2.pth
+  result_dir: results
+  optimizer:
+    weight_decay: 0.1
+
+data:
+  root: ${work_dir}/data
+  batch_size: 64
+  resize: [512,512]
+
+train:
+  num_epochs: 50
+  eval_strat: 5 # Num of epochs to run evaluation
+  lr: 1e-4
+
+wandb:
+  enabled: true
+  project: Unet1
