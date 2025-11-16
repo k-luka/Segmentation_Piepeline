@@ -6,7 +6,7 @@ Learning project that trains a UNet to segment pet masks from the Oxford-IIIT Pe
 
 | Input | Predicted Mask |
 | :---: | :------------: |
-| ![](docs/image_1.png) | ![](docs/mask_1.png) |
+| <img src="docs/image_1.png" width="80%" /> | <img src="docs/mask_1.png" width="80%" /> |
 
 ## Project Layout
 
